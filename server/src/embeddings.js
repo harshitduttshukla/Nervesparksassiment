@@ -4,7 +4,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 
 export async function getEmbeddings(text) {
   try {
-    // Check API key at function level (after dotenv has loaded)
+   
     if (!process.env.GEMINI_API_KEY) {
       throw new Error('GEMINI_API_KEY environment variable is required');
     }
@@ -22,7 +22,7 @@ export async function getEmbeddings(text) {
   } catch (error) {
     console.error('❌ Embedding generation failed:', error.message);
     
-    // If API key is invalid, provide more helpful error
+
     if (error.message.includes('API key not valid')) {
       console.error('🔑 Your Gemini API key appears to be invalid or expired.');
       console.error('   Current key preview:', process.env.GEMINI_API_KEY?.substring(0, 15) + '...');

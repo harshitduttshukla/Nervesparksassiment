@@ -1,23 +1,5 @@
-// export function chunkText(text, size = 500) {
-//   const words = text.split(/\s+/);
-//   const chunks = [];
-//   for (let i = 0; i < words.length; i += size) {
-//     chunks.push(words.slice(i, i + size).join(' '));
-//   }
-//   return chunks;
-// }
-
-
-
-
-
-
-
-
-
-// src/chunking.js
 export function chunkByPageAndParagraph(pages, maxWords = 250) {
-  // pages: [{page, text}, ...]
+ 
   const chunks = [];
 
   for (const p of pages) {
@@ -33,7 +15,7 @@ export function chunkByPageAndParagraph(pages, maxWords = 250) {
           type: 'paragraph',
         });
       } else {
-        // split paragraph into word-window chunks
+        
         for (let i = 0; i < words.length; i += maxWords) {
           const chunkText = words.slice(i, i + maxWords).join(' ');
           chunks.push({
@@ -46,5 +28,5 @@ export function chunkByPageAndParagraph(pages, maxWords = 250) {
     }
   }
 
-  return chunks; // array of { text, page, type }
+  return chunks; 
 }
