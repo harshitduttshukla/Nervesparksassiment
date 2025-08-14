@@ -1,0 +1,57 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Markdoc cache (if any)
+.markdoc-cache/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Testing
+coverage/
+jest-output/
+*.test.ts.snap
+*.test.js.snap
+
+# Misc
+.cache/
+tmp/
+temp/
+*.bak
+
+# Markdown preview or editor tools
+.markdownlint.json
+.markdownlint.yml
+
+# Lint & format
+.eslintcache
+.prettiercache
