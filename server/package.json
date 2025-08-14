@@ -15,12 +15,16 @@
     "@google/genai": "^1.13.0",
     "@google/generative-ai": "^0.24.1",
     "@pinecone-database/pinecone": "^6.1.2",
+    "canvas": "^3.1.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
+    "mammoth": "^1.10.0",
     "multer": "^2.0.2",
     "pdf-parse": "^1.1.1",
-    "tesseract.js": "^6.0.1"
+    "pdfjs-dist": "^2.16.105",
+    "tesseract.js": "^6.0.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
