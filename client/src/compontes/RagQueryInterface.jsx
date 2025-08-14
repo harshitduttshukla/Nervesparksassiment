@@ -20,7 +20,7 @@ function RagQueryInterface() {
     setResponse(null);
 
     try {
-      const res = await fetch(`https://nervesparksss.onrender.com/query`, {
+      const res = await fetch(`https://nervesparks12.onrender.com/query`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

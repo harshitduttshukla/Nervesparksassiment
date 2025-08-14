@@ -64,7 +64,7 @@ function UploadFile() {
       setMessage("");
 
       // Actual API call
-      const response = await fetch('https://nervesparksss.onrender.com/ingest', {
+      const response = await fetch('https://nervesparks12.onrender.com/ingest', {
         method: 'POST',
         body: formData,
         // Note: Don't set Content-Type header when using FormData, browser will set it automatically with boundary
